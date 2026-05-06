@@ -119,50 +119,7 @@ function setupVideoCarouselAutoplay() {
     });
 }
 
-// Tab widget for video groups (Motion Synthesis Results, etc.)
-function initTabsVideoGroups() {
-    document.querySelectorAll(".tabs-video-group").forEach(function (group) {
-        var tabs = group.querySelectorAll(".tabs li");
-        var contents = group.querySelectorAll(".video-content");
-
-        function activate(tab) {
-            tabs.forEach(function (t) { t.classList.remove("is-active"); });
-            tab.classList.add("is-active");
-            var targetId = tab.getAttribute("data-target");
-            contents.forEach(function (c) {
-                if (c.id === targetId) {
-                    c.classList.add("is-active");
-                    c.querySelectorAll("video").forEach(function (v) {
-                        var p = v.play();
-                        if (p && typeof p.catch === "function") p.catch(function () {});
-                    });
-                } else {
-                    c.classList.remove("is-active");
-                    c.querySelectorAll("video").forEach(function (v) { v.pause(); });
-                }
-            });
-        }
-
-        tabs.forEach(function (tab) {
-            // Bind on both the <li> and inner <a> for robust click/touch handling
-            var link = tab.querySelector("a");
-            var handler = function (e) {
-                if (e) e.preventDefault();
-                activate(tab);
-            };
-            tab.addEventListener("click", handler);
-            if (link) {
-                link.addEventListener("click", handler);
-            }
-        });
-    });
-}
-
-if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initTabsVideoGroups);
-} else {
-    initTabsVideoGroups();
-}
+// Tab widget init is now inline at end of body in index.html for faster activation
 
 $(document).ready(function() {
     // Check for click events on the navbar burger icon
