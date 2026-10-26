@@ -107,7 +107,7 @@
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop has-text-centered">
-        <h1 class="title is-1 publication-title"><img src="static/images/icon.png" alt="DexSynRefine icon" class="title-icon"/><span class="c-pink">Dex</span><span class="c-green">Syn</span><span class="c-purple">Refine</span>: <span class="c-green">Synthesizing</span> and <span class="c-purple">Refining</span> Human-Object Interaction Motion for Physically Feasible <span class="c-pink">Dexterous</span> Robot Actions</h1>
+        <h1 class="title is-1 publication-title"><img src="static/images/icon.png?v=929ccf82" alt="DexSynRefine icon" class="title-icon"/><span class="c-pink">Dex</span><span class="c-green">Syn</span><span class="c-purple">Refine</span>: <span class="c-green">Synthesizing</span> and <span class="c-purple">Refining</span> Human-Object Interaction Motion for Physically Feasible <span class="c-pink">Dexterous</span> Robot Actions</h1>
         <div class="is-size-5 publication-authors">
           <span class="author-block">Anonymous Authors</span>
         </div>
@@ -143,7 +143,7 @@
     <div class="container is-max-desktop">
       <div class="hero-body">
         <figure class="paper-figure">
-          <img src="static/images/figure_1.png" alt="DexSynRefine overview" loading="lazy" style="width: 80%;"/>
+          <img src="static/images/figure_1.png?v=49287d32" alt="DexSynRefine overview" loading="lazy" style="width: 80%;"/>
           <figcaption><span class="c-pink">Dex</span><span class="c-green">Syn</span><span class="c-purple">Refine</span> first synthesizes a task- and initial-pose-conditioned HOI reference from sparse recordings, then physically refines its wrist and fingertip targets through residual RL and proprioceptive adaptation.</figcaption>
         </figure>
       </div>
@@ -182,8 +182,8 @@
   <section class="section is-light" id="video">
     <div class="container is-max-desktop has-text-centered">
       <h2 class="title is-3">Supplementary Video</h2>
-      <video controls playsinline preload="metadata" poster="static/videos/Supplementary/poster.jpg" class="media-frame">
-        <source src="static/videos/Supplementary/DexSynRefine_Supplementary_Video.mp4" type="video/mp4">
+      <video controls playsinline preload="metadata" poster="static/videos/Supplementary/poster.jpg?v=e29ddb18" class="media-frame">
+        <source src="static/videos/Supplementary/DexSynRefine_Supplementary_Video.mp4?v=d8157a3e" type="video/mp4">
       </video>
       <p class="media-note">With audio narration and subtitles.</p>
     </div>
@@ -195,7 +195,7 @@
       <h2 class="title is-3">HOI-MMFP: HOI Motion Synthesis</h2>
       <p class="section-lead">From seven recordings per task, object-centric augmentation produces about 300 trajectories. A Transformer autoencoder compresses each coupled wrist&ndash;hand&ndash;object trajectory into a 16-D <strong>motion manifold</strong>, and <strong>conditional latent flow matching</strong> generates a new latent from the task embedding and the initial object pose. The frozen decoder turns it into a synthetic HOI reference.</p>
       <figure class="paper-figure">
-        <img src="static/images/figure_2.png" alt="HOI-MMFP architecture" loading="lazy" style="width: min(96vw, 1150px);"/>
+        <img src="static/images/figure_2.png?v=27530946" alt="HOI-MMFP architecture" loading="lazy" style="width: min(96vw, 1150px);"/>
         <figcaption>Top: a trajectory autoencoder learns the motion manifold. Bottom: the task embedding and initial object pose condition a Diffusion Transformer that generates a latent, which the copied, frozen decoder maps to a synthetic HOI trajectory.</figcaption>
       </figure>
     </div>
@@ -221,15 +221,15 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>HOI-MMFP (Ours)</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Book/HOI_MMFP_Book.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Book/HOI_MMFP_Book.mp4?v=1da71703" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label base">DiT-Full</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Book/DiT-Full_Book.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Book/DiT-Full_Book.mp4?v=ee281fea" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label base">TC-VAE</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Book/TC-VAE_Book.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Book/TC-VAE_Book.mp4?v=2cb4c2c5" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -237,15 +237,15 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>HOI-MMFP (Ours)</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Bowl/HOI_MMFP_Bowl.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Bowl/HOI_MMFP_Bowl.mp4?v=99567974" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label base">DiT-Full</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Bowl/Dit-Full_Bowl.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Bowl/Dit-Full_Bowl.mp4?v=da55c7d2" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label base">TC-VAE</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Bowl/TC-VAE_Bowl.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Bowl/TC-VAE_Bowl.mp4?v=35688057" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -253,15 +253,15 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>HOI-MMFP (Ours)</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Hammer/HOI_MMFP_Hammer.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Hammer/HOI_MMFP_Hammer.mp4?v=bd3e268d" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label base">DiT-Full</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Hammer/Dit-Full_Hammer.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Hammer/Dit-Full_Hammer.mp4?v=f2a6c7a3" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label base">TC-VAE</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Hammer/TC-VAE_Hammer.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Hammer/TC-VAE_Hammer.mp4?v=2e939853" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -269,15 +269,15 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>HOI-MMFP (Ours)</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Pringles/HOI-MMFP_Pringles.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Pringles/HOI-MMFP_Pringles.mp4?v=9825b597" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label base">DiT-Full</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Pringles/Dit-Full_Pringles.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Pringles/Dit-Full_Pringles.mp4?v=54306cb9" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label base">TC-VAE</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Pringles/TC-VAE_Pringles.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Pringles/TC-VAE_Pringles.mp4?v=092fd9e3" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -285,15 +285,15 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>HOI-MMFP (Ours)</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Watering%20Can/HOI_MMFP_Watering_Can.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Watering%20Can/HOI_MMFP_Watering_Can.mp4?v=b4000165" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label base">DiT-Full</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Watering%20Can/Dit-Full_Watering_Can.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Watering%20Can/Dit-Full_Watering_Can.mp4?v=5252fdc8" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label base">TC-VAE</p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Watering%20Can/TC-VAE_Watering_Can.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/HOI-MMFP/Watering%20Can/TC-VAE_Watering_Can.mp4?v=9c09299f" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -301,13 +301,13 @@
       </div>
       <figure class="paper-figure jerk-figure">
         <div class="columns is-vcentered">
-          <div class="column"><img src="static/images/jerk_rotation.png" alt="Wrist rotation jerk of generated trajectories" loading="lazy" class="media-frame"/></div>
-          <div class="column"><img src="static/images/jerk_translation.png" alt="Wrist translation jerk of generated trajectories" loading="lazy" class="media-frame"/></div>
+          <div class="column"><img src="static/images/jerk_rotation.png?v=1506ab5e" alt="Wrist rotation jerk of generated trajectories" loading="lazy" class="media-frame"/></div>
+          <div class="column"><img src="static/images/jerk_translation.png?v=d7ed7558" alt="Wrist translation jerk of generated trajectories" loading="lazy" class="media-frame"/></div>
         </div>
         <figcaption>Synthesizing trajectories directly in <strong>trajectory space</strong> produces jittery and jerky motions, while our manifold-based synthesis yields smooth, physically plausible HOI trajectories.</figcaption>
       </figure>
       <figure class="paper-figure" style="margin-top: 3rem;">
-        <img src="static/images/figure_4.jpg" alt="Generated HOI trajectories from three motion priors" loading="lazy" style="width: min(94vw, 760px);"/>
+        <img src="static/images/figure_4.jpg?v=8406fccd" alt="Generated HOI trajectories from three motion priors" loading="lazy" style="width: min(94vw, 760px);"/>
         <figcaption>Generated HOI trajectories from the three motion priors on five tasks. The red hand denotes the canonical start pose; check and cross marks indicate whether each prior preserves it.</figcaption>
       </figure>
     </div>
@@ -319,7 +319,7 @@
       <h2 class="title is-3">Task-Space Residual Refinement</h2>
       <p class="section-lead">A privileged teacher learns bounded <strong>task-space residuals</strong> that correct the wrist and fingertip targets of the synthesized reference while preserving its interaction structure. A deployable student, initialized from the teacher, replaces the privileged contact and dynamics inputs with <strong>estimates from proprioceptive history</strong>, so no simulator-only state is needed on the real robot.</p>
       <figure class="paper-figure">
-        <img src="static/images/figure_3.png" alt="Teacher and student residual RL" loading="lazy" style="width: min(98vw, 1300px);"/>
+        <img src="static/images/figure_3.png?v=239bb348" alt="Teacher and student residual RL" loading="lazy" style="width: min(98vw, 1300px);"/>
         <figcaption>Teacher (left) and student (right) policy training. The nominal target comes from the fixed HOI-MMFP reference; the policy adds a residual &Delta;a<sub>t</sub> before retargeting and PD control.</figcaption>
       </figure>
     </div>
@@ -345,11 +345,11 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>Task-Space Residual RL (Ours)<span class="metric-pill">SR 61.6%</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Book/TaskSpaceResidual_Book.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Book/TaskSpaceResidual_Book.mp4?v=e97c9e69" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label fail"><i class="fas fa-times"></i>Kinematic Retargeting<span class="metric-pill">SR 0.0%</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Book/Retargeting_Book.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Book/Retargeting_Book.mp4?v=cc99e905" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -357,11 +357,11 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>Task-Space Residual RL (Ours)<span class="metric-pill">SR 94.8%</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Bowl/TaskSpaceResidual_Bowl.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Bowl/TaskSpaceResidual_Bowl.mp4?v=ddd9e421" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label fail"><i class="fas fa-times"></i>Kinematic Retargeting<span class="metric-pill">SR 2.2%</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Bowl/Retargeting_Bowl.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Bowl/Retargeting_Bowl.mp4?v=b48356d7" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -369,11 +369,11 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>Task-Space Residual RL (Ours)<span class="metric-pill">SR 60.3%</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Hammer/TaskSpaceResidual_Hammer_2.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Hammer/TaskSpaceResidual_Hammer_2.mp4?v=34112a28" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label fail"><i class="fas fa-times"></i>Kinematic Retargeting<span class="metric-pill">SR 0.0%</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Hammer/Retargeting_Hammer.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Hammer/Retargeting_Hammer.mp4?v=51c057d3" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -381,11 +381,11 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>Task-Space Residual RL (Ours)<span class="metric-pill">SR 71.5%</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Pringles/TaskSpaceResidual_Pringles.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Pringles/TaskSpaceResidual_Pringles.mp4?v=f4ebc671" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label fail"><i class="fas fa-times"></i>Kinematic Retargeting<span class="metric-pill">SR 5.8%</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Pringles/Retargeting_Pringles.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Pringles/Retargeting_Pringles.mp4?v=3d3f609a" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -393,11 +393,11 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>Task-Space Residual RL (Ours)<span class="metric-pill">SR 52.4%</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Watering%20Can/TaskSpaceResidual_Watering_Can.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Watering%20Can/TaskSpaceResidual_Watering_Can.mp4?v=4164246d" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label fail"><i class="fas fa-times"></i>Kinematic Retargeting<span class="metric-pill">SR 0.0%</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Watering%20Can/Retargeting_Watering_Can.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Residual%20RL/Watering%20Can/Retargeting_Watering_Can.mp4?v=e65d65bd" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -431,35 +431,35 @@
         <div class="video-content is-active" id="cav-book">
           <div class="columns is-centered">
             <div class="column is-two-thirds has-text-centered">
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Contact/book_contact.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Contact/book_contact.mp4?v=ed1db1f2" type="video/mp4"></video>
             </div>
           </div>
         </div>
         <div class="video-content" id="cav-bowl">
           <div class="columns is-centered">
             <div class="column is-two-thirds has-text-centered">
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Contact/bowl_contact.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Contact/bowl_contact.mp4?v=7cb4d727" type="video/mp4"></video>
             </div>
           </div>
         </div>
         <div class="video-content" id="cav-hammer">
           <div class="columns is-centered">
             <div class="column is-two-thirds has-text-centered">
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Contact/hammer_contact.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Contact/hammer_contact.mp4?v=2ffde7d6" type="video/mp4"></video>
             </div>
           </div>
         </div>
         <div class="video-content" id="cav-pringles">
           <div class="columns is-centered">
             <div class="column is-two-thirds has-text-centered">
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Contact/pringles_contact.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Contact/pringles_contact.mp4?v=7b29544c" type="video/mp4"></video>
             </div>
           </div>
         </div>
         <div class="video-content" id="cav-watering-can">
           <div class="columns is-centered">
             <div class="column is-two-thirds has-text-centered">
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Contact/watering_can_contact.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Contact/watering_can_contact.mp4?v=8377b0ed" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -488,15 +488,15 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label neutral">Synthesized HOI Reference</p>
-              <img src="static/videos/Real%20World/Book/Book_Synthesis_Trajectory.png" alt="Pick and Place Book synthesized HOI trajectory" loading="lazy" class="media-frame"/>
+              <img src="static/videos/Real%20World/Book/Book_Synthesis_Trajectory.png?v=f2139b08" alt="Pick and Place Book synthesized HOI trajectory" loading="lazy" class="media-frame"/>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>Task-Space Residual RL (Ours)<span class="metric-pill">5/10</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Book/Book_Residual_RL.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Book/Book_Residual_RL.mp4?v=66c34bca" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label fail"><i class="fas fa-times"></i>Kinematic Retargeting<span class="metric-pill">0/10</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Book/Book_Retargeting.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Book/Book_Retargeting.mp4?v=0e25cbe2" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -504,15 +504,15 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label neutral">Synthesized HOI Reference</p>
-              <img src="static/videos/Real%20World/Bowl/Bowl_Synthesis_Trajectory.png" alt="Pick and Place Bowl synthesized HOI trajectory" loading="lazy" class="media-frame"/>
+              <img src="static/videos/Real%20World/Bowl/Bowl_Synthesis_Trajectory.png?v=0def9a27" alt="Pick and Place Bowl synthesized HOI trajectory" loading="lazy" class="media-frame"/>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>Task-Space Residual RL (Ours)<span class="metric-pill">9/10</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Bowl/Bowl_Residual_RL.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Bowl/Bowl_Residual_RL.mp4?v=8c8cd8af" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label fail"><i class="fas fa-times"></i>Kinematic Retargeting<span class="metric-pill">2/10</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Bowl/Bowl_Retargeting.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Bowl/Bowl_Retargeting.mp4?v=3699269d" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -520,15 +520,15 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label neutral">Synthesized HOI Reference</p>
-              <img src="static/videos/Real%20World/Hammer/Hammer_Synthesis_Trajectory.png" alt="Pick Up and Hammer synthesized HOI trajectory" loading="lazy" class="media-frame"/>
+              <img src="static/videos/Real%20World/Hammer/Hammer_Synthesis_Trajectory.png?v=61208b7a" alt="Pick Up and Hammer synthesized HOI trajectory" loading="lazy" class="media-frame"/>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>Task-Space Residual RL (Ours)<span class="metric-pill">7/10</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Hammer/Hammer_Residual_RL.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Hammer/Hammer_Residual_RL.mp4?v=3cbb2073" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label fail"><i class="fas fa-times"></i>Kinematic Retargeting<span class="metric-pill">1/10</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Hammer/Hammer_Retargeting.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Hammer/Hammer_Retargeting.mp4?v=7e463870" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -536,15 +536,15 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label neutral">Synthesized HOI Reference</p>
-              <img src="static/videos/Real%20World/Pringles/Pringles_Synthesis_Trajectory.png" alt="Reorient Pringles Bottle synthesized HOI trajectory" loading="lazy" class="media-frame"/>
+              <img src="static/videos/Real%20World/Pringles/Pringles_Synthesis_Trajectory.png?v=67c4c161" alt="Reorient Pringles Bottle synthesized HOI trajectory" loading="lazy" class="media-frame"/>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>Task-Space Residual RL (Ours)<span class="metric-pill">8/10</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Pringles/Pringles_Residual_RL.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Pringles/Pringles_Residual_RL.mp4?v=5ef453c6" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label fail"><i class="fas fa-times"></i>Kinematic Retargeting<span class="metric-pill">2/10</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Pringles/Pringles_Retargeting.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Pringles/Pringles_Retargeting.mp4?v=fb3d2f9a" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -552,15 +552,15 @@
           <div class="columns">
             <div class="column has-text-centered">
               <p class="vid-label neutral">Synthesized HOI Reference</p>
-              <img src="static/videos/Real%20World/Watering%20Can/Watering_Can_Synthesis_Trajectory.png" alt="Pick and Pour Watering Can synthesized HOI trajectory" loading="lazy" class="media-frame"/>
+              <img src="static/videos/Real%20World/Watering%20Can/Watering_Can_Synthesis_Trajectory.png?v=7b199d7b" alt="Pick and Pour Watering Can synthesized HOI trajectory" loading="lazy" class="media-frame"/>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label ours"><i class="fas fa-check"></i>Task-Space Residual RL (Ours)<span class="metric-pill">5/10</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Watering%20Can/Watering_Can_Residual_RL.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Watering%20Can/Watering_Can_Residual_RL.mp4?v=4d1a9e78" type="video/mp4"></video>
             </div>
             <div class="column has-text-centered">
               <p class="vid-label fail"><i class="fas fa-times"></i>Kinematic Retargeting<span class="metric-pill">0/10</span></p>
-              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Watering%20Can/Watering_Can_Retargeting.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline preload="metadata"><source src="static/videos/Real%20World/Watering%20Can/Watering_Can_Retargeting.mp4?v=294d4cb6" type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -575,9 +575,9 @@
       <h2 class="title is-3 has-text-centered">Real-World Digital Twin</h2>
       <p class="section-lead">The synthesized HOI reference, the real-robot rollout, and a digital-twin replay of the same rollout, played in sync at 1&times; speed.</p>
       <h3 class="title is-5 has-text-centered twin-title">Pick Up and Hammer</h3>
-      <video autoplay muted loop playsinline preload="metadata" class="media-frame twin-video"><source src="static/videos/Digital%20Twin/Hammer_Digital_Twin.mp4" type="video/mp4"></video>
+      <video autoplay muted loop playsinline preload="metadata" class="media-frame twin-video"><source src="static/videos/Digital%20Twin/Hammer_Digital_Twin.mp4?v=1b4721c6" type="video/mp4"></video>
       <h3 class="title is-5 has-text-centered twin-title">Reorient Pringles Bottle</h3>
-      <video autoplay muted loop playsinline preload="metadata" class="media-frame twin-video"><source src="static/videos/Digital%20Twin/Pringles_Digital_Twin.mp4" type="video/mp4"></video>
+      <video autoplay muted loop playsinline preload="metadata" class="media-frame twin-video"><source src="static/videos/Digital%20Twin/Pringles_Digital_Twin.mp4?v=3f3dc516" type="video/mp4"></video>
     </div>
   </section>
   <!-- BibTeX -->
