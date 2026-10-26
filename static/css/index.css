@@ -995,3 +995,4 @@ img.media-frame { background: #fff; }
 /* disabled link buttons */
 .button.is-disabled { pointer-events: none; cursor: not-allowed; box-shadow: none !important; }
 .button.is-green.is-disabled { background: #A7E9D6 !important; }
+.jerk-figure { max-width: 1300px; margin: 2.5rem auto 0; }

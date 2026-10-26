@@ -299,6 +299,13 @@
         </div>
         </div>
       </div>
+      <figure class="paper-figure jerk-figure">
+        <div class="columns is-vcentered">
+          <div class="column"><img src="static/images/jerk_rotation.png" alt="Wrist rotation jerk of generated trajectories" loading="lazy" class="media-frame"/></div>
+          <div class="column"><img src="static/images/jerk_translation.png" alt="Wrist translation jerk of generated trajectories" loading="lazy" class="media-frame"/></div>
+        </div>
+        <figcaption>Synthesizing trajectories directly in <strong>trajectory space</strong> produces jittery and jerky motions, while our manifold-based synthesis yields smooth, physically plausible HOI trajectories.</figcaption>
+      </figure>
       <figure class="paper-figure" style="margin-top: 3rem;">
         <img src="static/images/figure_4.jpg" alt="Generated HOI trajectories from three motion priors" loading="lazy" style="width: min(94vw, 760px);"/>
         <figcaption>Generated HOI trajectories from the three motion priors on five tasks. The red hand denotes the canonical start pose; check and cross marks indicate whether each prior preserves it.</figcaption>
