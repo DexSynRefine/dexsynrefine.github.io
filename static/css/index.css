@@ -991,3 +991,7 @@ img.media-frame { background: #fff; }
   .paper-figure img { width: 100% !important; }
 }
 .twin-video { background: #fff; box-shadow: none; border-radius: 0; margin-bottom: 1rem; }
+
+/* disabled link buttons */
+.button.is-disabled { pointer-events: none; cursor: not-allowed; box-shadow: none !important; }
+.button.is-green.is-disabled { background: #A7E9D6 !important; }
