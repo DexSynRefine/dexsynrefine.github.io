@@ -195,8 +195,8 @@
       <h2 class="title is-3">HOI-MMFP: HOI Motion Synthesis</h2>
       <p class="section-lead">From seven recordings per task, object-centric augmentation produces about 300 trajectories. A Transformer autoencoder compresses each coupled wrist&ndash;hand&ndash;object trajectory into a 16-D <strong>motion manifold</strong>, and <strong>conditional latent flow matching</strong> generates a new latent from the task embedding and the initial object pose. The frozen decoder turns it into a synthetic HOI reference.</p>
       <figure class="paper-figure">
-        <img src="static/images/figure_2.png" alt="HOI-MMFP architecture" loading="lazy" style="width: min(96vw, 1180px);"/>
-        <figcaption>Top: a trajectory autoencoder learns the motion manifold. Bottom: the task embedding and initial object pose condition a Diffusion Transformer that generates a latent, which the copied, frozen decoder maps to a synthetic HOI trajectory.</figcaption>
+        <img src="static/images/figure_2.png" alt="HOI-MMFP architecture" loading="lazy" style="width: min(98vw, 1300px);"/>
+        <figcaption>Left: a trajectory autoencoder learns the motion manifold. Right: the task embedding and initial object pose condition a Diffusion Transformer that generates a latent, which the copied, frozen decoder maps to a synthetic HOI trajectory.</figcaption>
       </figure>
     </div>
   </section>
@@ -312,7 +312,7 @@
       <h2 class="title is-3">Task-Space Residual Refinement</h2>
       <p class="section-lead">A privileged teacher learns bounded <strong>task-space residuals</strong> that correct the wrist and fingertip targets of the synthesized reference while preserving its interaction structure. A deployable student, initialized from the teacher, replaces the privileged contact and dynamics inputs with <strong>estimates from proprioceptive history</strong>, so no simulator-only state is needed on the real robot.</p>
       <figure class="paper-figure">
-        <img src="static/images/figure_3.png" alt="Teacher and student residual RL" loading="lazy" style="width: min(98vw, 1280px);"/>
+        <img src="static/images/figure_3.png" alt="Teacher and student residual RL" loading="lazy" style="width: min(98vw, 1300px);"/>
         <figcaption>Teacher (left) and student (right) policy training. The nominal target comes from the fixed HOI-MMFP reference; the policy adds a residual &Delta;a<sub>t</sub> before retargeting and PD control.</figcaption>
       </figure>
     </div>
