@@ -192,8 +192,8 @@
   <!-- HOI-MMFP -->
   <section class="section">
     <div class="container has-text-centered" style="max-width: 1320px;">
-      <h2 class="title is-3">HOI-MMFP: HOI Motion Synthesis</h2>
-      <p class="section-lead">From seven recordings per task, object-centric augmentation produces about 300 trajectories. A Transformer autoencoder compresses each coupled wrist&ndash;hand&ndash;object trajectory into a 16-D <strong>motion manifold</strong>, and <strong>conditional latent flow matching</strong> generates a new latent from the task embedding and the initial object pose. The frozen decoder turns it into a synthetic HOI reference.</p>
+      <h2 class="title is-3">HOI-MMFP: HOI Motion Manifold Flow Primitives</h2>
+      <p class="section-lead">HOI-MMFP is a <strong>generative motion prior</strong> for coupled wrist&ndash;hand&ndash;object motion. From seven recordings per task, object-centric augmentation produces about 300 trajectories. A Transformer autoencoder compresses each coupled wrist&ndash;hand&ndash;object trajectory into a 16-D <strong>motion manifold</strong>, and <strong>conditional latent flow matching</strong> generates a new latent from the task embedding and the initial object pose. The frozen decoder turns it into a synthetic HOI reference.</p>
       <figure class="paper-figure">
         <img src="static/images/figure_2.png?v=27530946" alt="HOI-MMFP architecture" loading="lazy" style="width: min(96vw, 1150px);"/>
         <figcaption>Top: a trajectory autoencoder learns the motion manifold. Bottom: the task embedding and initial object pose condition a Diffusion Transformer that generates a latent, which the copied, frozen decoder maps to a synthetic HOI trajectory.</figcaption>
