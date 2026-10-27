@@ -996,3 +996,5 @@ img.media-frame { background: #fff; }
 .button.is-disabled { pointer-events: none; cursor: not-allowed; box-shadow: none !important; }
 .button.is-green.is-disabled { background: #A7E9D6 !important; }
 .jerk-figure { max-width: 1300px; margin: 2.5rem auto 0; }
+
+.section.has-divider { border-top: 1px solid var(--border-color); }

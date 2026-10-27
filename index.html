@@ -166,20 +166,8 @@
     </div>
   </section>
 
-  <!-- Key results -->
-  <section class="section section-tight">
-    <div class="container">
-      <div class="stat-grid">
-        <div class="stat-card"><div class="stat-value c-pink">7</div><div class="stat-label">human recordings per task are all the HOI data used</div></div>
-        <div class="stat-card"><div class="stat-value c-green">68.1%</div><div class="stat-label">average simulation success with HOI-MMFP references and task-space residuals</div></div>
-        <div class="stat-card"><div class="stat-value c-purple">34/50</div><div class="stat-label">real-robot successes, vs. 5/50 for kinematic retargeting</div></div>
-        <div class="stat-card"><div class="stat-value c-purple">15/20</div><div class="stat-label">matched-pose real-robot successes, vs. 11/20 for the best adaptation baseline</div></div>
-      </div>
-    </div>
-  </section>
-
   <!-- Supplementary video -->
-  <section class="section is-light" id="video">
+  <section class="section" id="video">
     <div class="container is-max-desktop has-text-centered">
       <h2 class="title is-3">Supplementary Video</h2>
       <video controls playsinline preload="metadata" poster="static/videos/Supplementary/poster.jpg?v=e29ddb18" class="media-frame">
@@ -190,7 +178,7 @@
   </section>
 
   <!-- HOI-MMFP -->
-  <section class="section">
+  <section class="section has-divider">
     <div class="container has-text-centered" style="max-width: 1320px;">
       <h2 class="title is-3">HOI-MMFP: HOI Motion Manifold Flow Primitives</h2>
       <p class="section-lead">HOI-MMFP is a <strong>generative motion prior</strong> for coupled wrist&ndash;hand&ndash;object motion. From seven recordings per task, object-centric augmentation produces about 300 trajectories. A Transformer autoencoder compresses each coupled wrist&ndash;hand&ndash;object trajectory into a 16-D <strong>motion manifold</strong>, and <strong>conditional latent flow matching</strong> generates a new latent from the task embedding and the initial object pose. The frozen decoder turns it into a synthetic HOI reference.</p>
